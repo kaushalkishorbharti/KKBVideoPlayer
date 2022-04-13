@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+def all_pods
+  pod "JDFTooltips"
+  pod 'SwiftMessages'
+  pod 'Mantis'
+end
+
+target 'TestOptimization' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TestOptimization
+all_pods
+
+end
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
+        end
+    end
+end
+target 'DCUIFramework' do
+      project '/Users/kaushalkishor/Desktop/DemoProjects/FrameworkOptimization/TestOptimization/TestOptimization/DCUIFramework//DCUIFramework.xcodeproj/'
+      workspace '/Users/kaushalkishor/Desktop/DemoProjects/FrameworkOptimization/TestOptimization/TestOptimization/DCUIFramework//DCUIFramework.xcworkspace/'
+
+      all_pods
+  end

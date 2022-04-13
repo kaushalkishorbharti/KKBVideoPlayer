@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DCFGetSampleView" customModule="DCUIFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="imgArrow" destination="bzh-9y-beU" id="E7f-XX-IfM"/>
+                <outlet property="imgIcon" destination="K60-hM-pg2" id="kBZ-Gz-KDT"/>
+                <outlet property="imgLabel" destination="b0n-gB-p72" id="oPr-bS-0CS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="542" height="121"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDF-R9-gCV">
+                    <rect key="frame" x="0.0" y="0.0" width="542" height="121"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K60-hM-pg2" customClass="DCUIFImageView" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="10" y="40" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="MAc-ow-ZDX"/>
+                                <constraint firstAttribute="height" constant="40" id="eM5-5e-1as"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-gB-p72">
+                            <rect key="frame" x="60" y="50" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-9y-beU" customClass="DCUIFImageView" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="492" y="40" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="2zL-H6-6c2"/>
+                                <constraint firstAttribute="height" constant="40" id="6Ob-jC-Yub"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b0n-gB-p72" firstAttribute="leading" secondItem="K60-hM-pg2" secondAttribute="trailing" constant="10" id="5YZ-e4-NSA"/>
+                        <constraint firstItem="K60-hM-pg2" firstAttribute="leading" secondItem="UDF-R9-gCV" secondAttribute="leading" constant="10" id="BXZ-nt-i28"/>
+                        <constraint firstItem="bzh-9y-beU" firstAttribute="centerY" secondItem="UDF-R9-gCV" secondAttribute="centerY" id="C7P-8H-q9d"/>
+                        <constraint firstItem="K60-hM-pg2" firstAttribute="centerY" secondItem="UDF-R9-gCV" secondAttribute="centerY" id="RoM-M6-TmB"/>
+                        <constraint firstAttribute="trailing" secondItem="bzh-9y-beU" secondAttribute="trailing" constant="10" id="T1a-6g-Gl3"/>
+                        <constraint firstItem="b0n-gB-p72" firstAttribute="centerY" secondItem="K60-hM-pg2" secondAttribute="centerY" id="q0n-pQ-ewk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UDF-R9-gCV" secondAttribute="bottom" id="6X9-cA-Osc"/>
+                <constraint firstItem="UDF-R9-gCV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BnX-7v-DBE"/>
+                <constraint firstItem="UDF-R9-gCV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gYo-C0-hNz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UDF-R9-gCV" secondAttribute="trailing" id="wPe-wV-kVt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="30" y="393.5"/>
+        </view>
+    </objects>
+</document>

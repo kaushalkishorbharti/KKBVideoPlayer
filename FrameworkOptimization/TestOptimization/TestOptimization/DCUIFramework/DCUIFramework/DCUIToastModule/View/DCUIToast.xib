@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JI3-gM-XBO" userLabel="Card View" customClass="DCUIToast" customModule="DCUIFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dp3-Ae-zep" userLabel="Background view" customClass="CornerRoundingView" customModule="SwiftMessages">
+                    <rect key="frame" x="30" y="10" width="540" height="142"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RJH-Fp-YDa" userLabel="Content view">
+                            <rect key="frame" x="30" y="8" width="480" height="126"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LeI-fF-xPM">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="126"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPu-SF-5Mk">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-tz-2I7" customClass="DCUIFImageView" customModule="DCUIFramework">
+                                                    <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="a2F-tz-2I7" secondAttribute="trailing" id="055-ZU-tNY"/>
+                                                <constraint firstItem="a2F-tz-2I7" firstAttribute="top" secondItem="lPu-SF-5Mk" secondAttribute="top" id="M5B-nR-AG5"/>
+                                                <constraint firstItem="a2F-tz-2I7" firstAttribute="leading" secondItem="lPu-SF-5Mk" secondAttribute="leading" id="RjW-64-3Tr"/>
+                                                <constraint firstAttribute="bottom" secondItem="a2F-tz-2I7" secondAttribute="bottom" id="rRv-0U-7t6"/>
+                                                <constraint firstAttribute="width" secondItem="lPu-SF-5Mk" secondAttribute="height" id="w19-q7-YFc"/>
+                                                <constraint firstAttribute="width" constant="50" id="zkp-v1-acV"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzz-75-pOQ">
+                                            <rect key="frame" x="131" y="0.0" width="349" height="126"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="1000" text="Just one, please." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOl-ak-Ryu" customClass="DCUIFActiveThemeLabel" customModule="DCUIFramework" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="52" width="349" height="22"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="labelTemeStyle" value="mediumWhite12"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="09s-iR-O2i"/>
+                                                <constraint firstItem="eOl-ak-Ryu" firstAttribute="leading" secondItem="yzz-75-pOQ" secondAttribute="leading" id="Xwo-4E-EPI"/>
+                                                <constraint firstAttribute="trailing" secondItem="eOl-ak-Ryu" secondAttribute="trailing" id="kRH-De-qz6"/>
+                                                <constraint firstItem="eOl-ak-Ryu" firstAttribute="centerY" secondItem="yzz-75-pOQ" secondAttribute="centerY" id="yLx-P7-HDx"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="RJH-Fp-YDa" secondAttribute="bottom" constant="8" id="3t4-62-KuN"/>
+                        <constraint firstItem="RJH-Fp-YDa" firstAttribute="top" secondItem="dp3-Ae-zep" secondAttribute="top" constant="8" id="6rK-Yv-gKZ"/>
+                        <constraint firstAttribute="trailing" secondItem="RJH-Fp-YDa" secondAttribute="trailing" constant="30" id="dJi-po-g6O"/>
+                        <constraint firstItem="RJH-Fp-YDa" firstAttribute="leading" secondItem="dp3-Ae-zep" secondAttribute="leading" constant="30" id="zmH-aG-8Ij"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="dp3-Ae-zep" secondAttribute="trailing" constant="10" id="gGP-zK-6VU"/>
+                <constraint firstItem="dp3-Ae-zep" firstAttribute="leading" secondItem="JI3-gM-XBO" secondAttribute="leadingMargin" constant="10" id="gyP-aD-uO3"/>
+                <constraint firstAttribute="bottomMargin" secondItem="dp3-Ae-zep" secondAttribute="bottom" constant="10" id="le8-gK-lcY"/>
+                <constraint firstItem="dp3-Ae-zep" firstAttribute="top" secondItem="JI3-gM-XBO" secondAttribute="topMargin" constant="10" id="s15-z9-aHc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="bounceAnimationOffset">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundView" destination="dp3-Ae-zep" id="ZiK-GN-SXH"/>
+                <outlet property="lbl" destination="eOl-ak-Ryu" id="qz6-Vm-cRh"/>
+                <outlet property="leftImageView" destination="a2F-tz-2I7" id="HP5-k3-aee"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="680.05997001499259"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="eOl-ak-Ryu">
+            <size key="intrinsicContentSize" width="94.5" height="22"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,11 @@
+framework module SwiftyToolTip {
+  umbrella header "SwiftyToolTip-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyToolTip.Swift {
+    header "SwiftyToolTip-Swift.h"
+    requires objc
+}

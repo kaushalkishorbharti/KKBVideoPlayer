@@ -1,0 +1,11 @@
+framework module KKBVideoPlayer {
+  umbrella header "KKBVideoPlayer.h"
+
+  export *
+  module * { export * }
+}
+
+module KKBVideoPlayer.Swift {
+    header "KKBVideoPlayer-Swift.h"
+    requires objc
+}

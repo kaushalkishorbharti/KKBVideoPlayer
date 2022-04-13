@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcr-2l-QwH" userLabel="bannerView" customClass="DCUIBannerView" customModule="DCUIFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Njh-eO-dvJ"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="bannerView" destination="iN0-l3-epB" id="Chm-v0-1XS"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="E2y-B3-Rjg"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="N5D-Vp-mky"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RmB-Lr-q6x"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="THi-kw-TGY"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Y86-hN-1gB"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r05-Yd-OI2"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="xqk-rB-0H8"/>
+                <constraint firstItem="wcr-2l-QwH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zgu-g7-bHc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

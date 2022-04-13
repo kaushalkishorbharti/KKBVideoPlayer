@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TestOptimization/Pods-TestOptimization-frameworks.sh
+${BUILT_PRODUCTS_DIR}/JDFTooltips-framework/JDFTooltips.framework
+${BUILT_PRODUCTS_DIR}/Mantis-framework/Mantis.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages-framework/SwiftMessages.framework

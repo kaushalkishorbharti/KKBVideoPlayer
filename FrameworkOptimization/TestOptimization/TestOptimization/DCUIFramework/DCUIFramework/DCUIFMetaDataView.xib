@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DCUIFMetaDataView" customModule="DCUIFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="341"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-NO-BC5" customClass="DCUIFView" customModule="DCUIFramework" customModuleProvider="target">
+                    <rect key="frame" x="5" y="5" width="434" height="331"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGZ-89-dy8" customClass="DCUIFImageView" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="434" height="265"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1I-Ii-AUP" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="5" y="300.5" width="424" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelTypeIB" value="TextStyleGreyHeading"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42g-IK-dxO" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="5" y="275" width="424" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelTypeIB" value="TextStyleGreyHeading"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-8s-FWu">
+                            <rect key="frame" x="0.0" y="0.0" width="434" height="331"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gGZ-89-dy8" firstAttribute="top" secondItem="V1g-NO-BC5" secondAttribute="top" id="1CN-i1-vlq"/>
+                        <constraint firstItem="C1I-Ii-AUP" firstAttribute="leading" secondItem="V1g-NO-BC5" secondAttribute="leading" constant="5" id="28B-6S-RdP"/>
+                        <constraint firstAttribute="trailing" secondItem="42g-IK-dxO" secondAttribute="trailing" constant="5" id="4s8-WP-0jc"/>
+                        <constraint firstAttribute="bottom" secondItem="Pmv-8s-FWu" secondAttribute="bottom" id="DbA-fp-rhf"/>
+                        <constraint firstAttribute="trailing" secondItem="gGZ-89-dy8" secondAttribute="trailing" id="ICh-sD-ttv"/>
+                        <constraint firstItem="gGZ-89-dy8" firstAttribute="leading" secondItem="V1g-NO-BC5" secondAttribute="leading" id="KgI-fz-D5B"/>
+                        <constraint firstAttribute="trailing" secondItem="Pmv-8s-FWu" secondAttribute="trailing" id="ZKL-dX-WVT"/>
+                        <constraint firstItem="Pmv-8s-FWu" firstAttribute="leading" secondItem="V1g-NO-BC5" secondAttribute="leading" id="oAc-9i-uSO"/>
+                        <constraint firstAttribute="trailing" secondItem="C1I-Ii-AUP" secondAttribute="trailing" constant="5" id="qOX-W9-tBf"/>
+                        <constraint firstAttribute="bottom" secondItem="C1I-Ii-AUP" secondAttribute="bottom" constant="10" id="qlD-BY-TlQ"/>
+                        <constraint firstItem="Pmv-8s-FWu" firstAttribute="top" secondItem="V1g-NO-BC5" secondAttribute="top" id="tnN-kZ-ZEs"/>
+                        <constraint firstItem="42g-IK-dxO" firstAttribute="leading" secondItem="V1g-NO-BC5" secondAttribute="leading" constant="5" id="x8i-fu-hCb"/>
+                        <constraint firstItem="C1I-Ii-AUP" firstAttribute="top" secondItem="42g-IK-dxO" secondAttribute="bottom" constant="5" id="yxV-s6-VDJ"/>
+                        <constraint firstItem="42g-IK-dxO" firstAttribute="top" secondItem="gGZ-89-dy8" secondAttribute="bottom" constant="10" id="zfi-6T-NAn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="roundRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBorder" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="V1g-NO-BC5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="dcm-QL-OdG"/>
+                <constraint firstItem="V1g-NO-BC5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="hKJ-sE-yvo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V1g-NO-BC5" secondAttribute="trailing" constant="5" id="o9e-JI-ADV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="V1g-NO-BC5" secondAttribute="bottom" constant="5" id="s23-a3-QD6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgPreview" destination="gGZ-89-dy8" id="hxJ-ZT-gOI"/>
+                <outlet property="lblDescription" destination="C1I-Ii-AUP" id="rHo-Ft-pQA"/>
+                <outlet property="lblName" destination="42g-IK-dxO" id="6pX-Da-tX9"/>
+                <outlet property="webView" destination="Pmv-8s-FWu" id="OnX-iX-Z9c"/>
+            </connections>
+            <point key="canvasLocation" x="69" y="25.5"/>
+        </view>
+    </objects>
+</document>

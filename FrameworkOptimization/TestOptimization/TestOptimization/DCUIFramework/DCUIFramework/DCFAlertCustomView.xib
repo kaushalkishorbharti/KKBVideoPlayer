@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DCFAlertCustomView" customModule="DCUIFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="935"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlZ-Tm-9Z2">
+                    <rect key="frame" x="20" y="327.5" width="466" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="channel-questionMark" translatesAutoresizingMaskIntoConstraints="NO" id="645-pC-7xz" customClass="DCUIFImageView" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="172" y="29" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="9I4-4V-uVH"/>
+                                <constraint firstAttribute="width" constant="65" id="BSg-Ly-vqX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to Join/Subscribe this channel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mda-O6-R9m" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="109" width="426" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelTypeIB" value="TextStyleTitleMedium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXX-eF-G7u" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="15" y="150" width="404" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelTypeIB" value="TextStyleSponsered"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-Qr-wt8">
+                            <rect key="frame" x="20" y="220" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="f1u-9J-Mzt"/>
+                                <constraint firstAttribute="width" constant="25" id="txF-wn-QvE"/>
+                            </constraints>
+                            <connections>
+                                <action selector="tickWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="fbb-qG-G51"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" I accept all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lb6-fU-Tb4" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="43" y="222" width="110" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelTypeIB" value="TextStlyeBlack"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="terms and conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIN-lV-s1X" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="201" y="222" width="150" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelTypeIB" value="TextStlyeBlack"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCf-Wg-jvp" customClass="DCUIFButton" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="260" width="233" height="40"/>
+                            <color key="backgroundColor" red="0.72336632010000002" green="0.031728961639999997" blue="0.1130801604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LGF-4q-X0b"/>
+                            </constraints>
+                            <state key="normal" title="Cancel"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBorder" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDisableStyle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnCancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="SaX-AO-R2t"/>
+                            </connections>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kb2-u3-gYF">
+                            <rect key="frame" x="233" y="260" width="233" height="40"/>
+                            <color key="backgroundColor" red="0.11764705882352941" green="0.67843137254901964" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5zD-gR-Lfe"/>
+                            </constraints>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnOkClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="zcz-21-O5u"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KCf-Wg-jvp" firstAttribute="top" secondItem="Xd1-Qr-wt8" secondAttribute="bottom" constant="15" id="5pC-CX-FZC"/>
+                        <constraint firstItem="645-pC-7xz" firstAttribute="top" secondItem="xlZ-Tm-9Z2" secondAttribute="top" constant="29" id="7xp-1S-AJt"/>
+                        <constraint firstAttribute="bottom" secondItem="KCf-Wg-jvp" secondAttribute="bottom" id="7z5-gB-yfh"/>
+                        <constraint firstAttribute="trailing" secondItem="Mda-O6-R9m" secondAttribute="trailing" constant="20" id="E28-80-3KN"/>
+                        <constraint firstAttribute="trailing" secondItem="HXX-eF-G7u" secondAttribute="trailing" constant="20" id="EBI-vN-Clw"/>
+                        <constraint firstItem="iIN-lV-s1X" firstAttribute="leading" secondItem="lb6-fU-Tb4" secondAttribute="trailing" constant="3" id="Ezv-cD-0cp"/>
+                        <constraint firstAttribute="height" constant="300" id="FPd-8g-T6d"/>
+                        <constraint firstItem="Xd1-Qr-wt8" firstAttribute="leading" secondItem="xlZ-Tm-9Z2" secondAttribute="leading" constant="20" id="L9L-Xm-s4p"/>
+                        <constraint firstItem="lb6-fU-Tb4" firstAttribute="centerY" secondItem="Xd1-Qr-wt8" secondAttribute="centerY" id="LsQ-Hp-nwi"/>
+                        <constraint firstItem="Mda-O6-R9m" firstAttribute="top" secondItem="645-pC-7xz" secondAttribute="bottom" constant="15" id="Omk-iW-Pp9"/>
+                        <constraint firstItem="lb6-fU-Tb4" firstAttribute="leading" secondItem="Xd1-Qr-wt8" secondAttribute="trailing" constant="5" id="PlJ-8k-S2M"/>
+                        <constraint firstItem="Kb2-u3-gYF" firstAttribute="leading" secondItem="KCf-Wg-jvp" secondAttribute="trailing" id="V9k-kx-3ST"/>
+                        <constraint firstItem="Mda-O6-R9m" firstAttribute="leading" secondItem="xlZ-Tm-9Z2" secondAttribute="leading" constant="20" id="Xjz-kQ-Auz"/>
+                        <constraint firstAttribute="trailing" secondItem="Kb2-u3-gYF" secondAttribute="trailing" id="aX1-CM-dde"/>
+                        <constraint firstItem="HXX-eF-G7u" firstAttribute="leading" secondItem="xlZ-Tm-9Z2" secondAttribute="leading" constant="10" id="h3p-Z3-aDD"/>
+                        <constraint firstItem="iIN-lV-s1X" firstAttribute="centerY" secondItem="lb6-fU-Tb4" secondAttribute="centerY" id="hmq-DH-ona"/>
+                        <constraint firstItem="KCf-Wg-jvp" firstAttribute="width" secondItem="xlZ-Tm-9Z2" secondAttribute="width" multiplier="1:2" id="inU-du-I34"/>
+                        <constraint firstItem="HXX-eF-G7u" firstAttribute="top" secondItem="Mda-O6-R9m" secondAttribute="bottom" constant="10" id="lD6-A0-hbj"/>
+                        <constraint firstItem="KCf-Wg-jvp" firstAttribute="leading" secondItem="xlZ-Tm-9Z2" secondAttribute="leading" id="qZD-Kl-v8l"/>
+                        <constraint firstItem="645-pC-7xz" firstAttribute="centerX" secondItem="xlZ-Tm-9Z2" secondAttribute="centerX" id="tx8-So-53T"/>
+                        <constraint firstAttribute="bottom" secondItem="Kb2-u3-gYF" secondAttribute="bottom" id="vey-cY-p9s"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.089644160583941604" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xlZ-Tm-9Z2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="92e-h0-auR"/>
+                <constraint firstItem="xlZ-Tm-9Z2" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="iGV-ZA-pEm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xlZ-Tm-9Z2" secondAttribute="trailing" constant="20" id="kGh-lY-NHm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="acceptAllText" destination="lb6-fU-Tb4" id="X3A-bF-T0Z"/>
+                <outlet property="btnCancel" destination="KCf-Wg-jvp" id="UTa-Oh-FUJ"/>
+                <outlet property="btnOk" destination="Kb2-u3-gYF" id="Nwt-WK-vyj"/>
+                <outlet property="btntick" destination="Xd1-Qr-wt8" id="lau-xF-Jyt"/>
+                <outlet property="imgView" destination="645-pC-7xz" id="sMS-sd-xI0"/>
+                <outlet property="lblChannelFreeText" destination="HXX-eF-G7u" id="paH-mc-jlX"/>
+                <outlet property="lblDescription" destination="Mda-O6-R9m" id="8Bm-Y3-7fN"/>
+                <outlet property="termConditionText" destination="iIN-lV-s1X" id="tg2-7o-wFg"/>
+            </connections>
+            <point key="canvasLocation" x="-778" y="-655.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="channel-questionMark" width="36" height="36"/>
+    </resources>
+</document>

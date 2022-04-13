@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DCUIFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../GalaxyRoche/Galaxy/Galaxy.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../GalaxyRoche/Galaxy/Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../TestOptimization.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DCUIFCarousel" customModule="DCUIFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="197"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-CI-bOJ" customClass="AACarousel" customModule="DCUIFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="359" height="197"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9sr-9n-AIu" customClass="DCUIFImageView" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="197"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9sr-9n-AIu" firstAttribute="top" secondItem="KzH-CI-bOJ" secondAttribute="top" id="Swv-3q-Ie0"/>
+                        <constraint firstAttribute="bottom" secondItem="9sr-9n-AIu" secondAttribute="bottom" id="WDU-aN-8V4"/>
+                        <constraint firstItem="9sr-9n-AIu" firstAttribute="leading" secondItem="KzH-CI-bOJ" secondAttribute="leading" id="gBb-Rm-sYB"/>
+                        <constraint firstAttribute="trailing" secondItem="9sr-9n-AIu" secondAttribute="trailing" id="wBl-7m-IZx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KzH-CI-bOJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="15y-ML-QmK"/>
+                <constraint firstAttribute="trailing" secondItem="KzH-CI-bOJ" secondAttribute="trailing" id="XBX-m1-XD4"/>
+                <constraint firstItem="KzH-CI-bOJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e5Y-cE-63N"/>
+                <constraint firstAttribute="bottom" secondItem="KzH-CI-bOJ" secondAttribute="bottom" id="sNS-85-LCz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carousel" destination="KzH-CI-bOJ" id="MWp-eH-Vh3"/>
+                <outlet property="imgView" destination="9sr-9n-AIu" id="aAJ-fV-Sau"/>
+            </connections>
+            <point key="canvasLocation" x="65.5" y="-344.5"/>
+        </view>
+    </objects>
+</document>

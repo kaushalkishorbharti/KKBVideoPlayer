@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DCUIFUpvoteView" customModule="DCUIFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="faQ-sR-jev"/>
+                <outlet property="lblUpvote" destination="Gsh-fi-gFr" id="QIy-pH-R1F"/>
+                <outlet property="parentView" destination="E5s-g5-0sc" id="x1r-z5-sh3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5s-g5-0sc" userLabel="ParentView" customClass="DCUIFView" customModule="DCUIFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="249" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gsh-fi-gFr" userLabel="Label Upvote" customClass="DCUIFLabel" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="8" y="0.0" width="233" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="Gsh-fi-gFr" firstAttribute="leading" secondItem="E5s-g5-0sc" secondAttribute="leading" constant="8" id="1bQ-Fr-J7q"/>
+                        <constraint firstItem="Gsh-fi-gFr" firstAttribute="top" secondItem="E5s-g5-0sc" secondAttribute="top" id="YXh-sV-nxo"/>
+                        <constraint firstAttribute="trailing" secondItem="Gsh-fi-gFr" secondAttribute="trailing" constant="8" id="c3S-xv-3K9"/>
+                        <constraint firstAttribute="bottom" secondItem="Gsh-fi-gFr" secondAttribute="bottom" id="lxs-XJ-gRa"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBorder" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="roundRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="EOH-yC-2yq" appends="YES" id="5Ym-en-BNb"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="E5s-g5-0sc" secondAttribute="trailing" id="APa-qy-eTN"/>
+                <constraint firstAttribute="bottom" secondItem="E5s-g5-0sc" secondAttribute="bottom" id="H0O-4e-jMy"/>
+                <constraint firstItem="E5s-g5-0sc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M3W-8u-8JF"/>
+                <constraint firstItem="E5s-g5-0sc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="p1y-hY-QBD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-6.5" y="-212"/>
+        </view>
+        <tapGestureRecognizer id="EOH-yC-2yq">
+            <connections>
+                <action selector="tapGesture:" destination="-1" id="pae-DH-iIV"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

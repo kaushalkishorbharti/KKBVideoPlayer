@@ -1,0 +1,6 @@
+module Mantis {
+  umbrella header "Mantis-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

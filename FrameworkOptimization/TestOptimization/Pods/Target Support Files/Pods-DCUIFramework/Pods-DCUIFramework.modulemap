@@ -1,0 +1,6 @@
+module Pods_DCUIFramework {
+  umbrella header "Pods-DCUIFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

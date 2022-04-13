@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.94999998807907104" contentMode="scaleToFill" restorationIdentifier="DCUIFPostCommentView" id="ADK-ak-LCG" customClass="DCUIFPostCommentView" customModule="DCUIFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSU-Ol-A5p" userLabel="View ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLP-qz-r0E">
+                            <rect key="frame" x="0.0" y="1" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="a1z-kH-YRC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.86666666670000003" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lv2-sa-uyS" customClass="DCUIFPlaceHolderTextView" customModule="DCUIFramework" customModuleProvider="target">
+                            <rect key="frame" x="10" y="4" width="306" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Write a comment..."/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="ADK-ak-LCG" id="yRs-BI-tNP"/>
+                            </connections>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiS-hx-LDe" userLabel="PostBtn">
+                            <rect key="frame" x="321" y="2" width="44" height="42"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="lDf-D1-DLF"/>
+                            </constraints>
+                            <state key="normal" image="PostComment"/>
+                            <connections>
+                                <action selector="sendPostComment:" destination="ADK-ak-LCG" eventType="touchUpInside" id="ybd-bk-tB0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MiS-hx-LDe" secondAttribute="trailing" constant="10" id="86b-5F-tQX"/>
+                        <constraint firstAttribute="bottom" secondItem="MiS-hx-LDe" secondAttribute="bottom" id="BT3-vU-z7A"/>
+                        <constraint firstItem="MiS-hx-LDe" firstAttribute="leading" secondItem="lv2-sa-uyS" secondAttribute="trailing" constant="5" id="EK9-oc-8qg"/>
+                        <constraint firstAttribute="trailing" secondItem="VLP-qz-r0E" secondAttribute="trailing" id="JKd-WL-KnH"/>
+                        <constraint firstAttribute="height" constant="44" id="PL5-P8-k0p"/>
+                        <constraint firstItem="lv2-sa-uyS" firstAttribute="bottom" secondItem="MiS-hx-LDe" secondAttribute="bottom" constant="-2" id="U8j-JD-rkX"/>
+                        <constraint firstItem="lv2-sa-uyS" firstAttribute="top" secondItem="VLP-qz-r0E" secondAttribute="bottom" constant="2" id="bCG-4S-1HU"/>
+                        <constraint firstItem="VLP-qz-r0E" firstAttribute="leading" secondItem="vSU-Ol-A5p" secondAttribute="leading" id="coa-vC-kge"/>
+                        <constraint firstItem="lv2-sa-uyS" firstAttribute="leading" secondItem="vSU-Ol-A5p" secondAttribute="leading" constant="10" id="gaK-y3-8Hk"/>
+                        <constraint firstItem="MiS-hx-LDe" firstAttribute="top" secondItem="vSU-Ol-A5p" secondAttribute="top" constant="2" id="hk2-UO-eAq"/>
+                        <constraint firstItem="VLP-qz-r0E" firstAttribute="top" secondItem="vSU-Ol-A5p" secondAttribute="top" constant="1" id="xmn-q9-KgB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vSU-Ol-A5p" secondAttribute="trailing" id="0ud-ih-FPy"/>
+                <constraint firstItem="vSU-Ol-A5p" firstAttribute="top" secondItem="ADK-ak-LCG" secondAttribute="top" id="X0k-DX-zO8"/>
+                <constraint firstItem="vSU-Ol-A5p" firstAttribute="leading" secondItem="ADK-ak-LCG" secondAttribute="leading" id="abW-Pg-luD"/>
+                <constraint firstAttribute="bottom" secondItem="vSU-Ol-A5p" secondAttribute="bottom" id="xaX-gI-xD8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_postComment" destination="MiS-hx-LDe" id="gk1-xr-elu"/>
+                <outlet property="textview_comment" destination="lv2-sa-uyS" id="J6V-56-uaD"/>
+            </connections>
+            <point key="canvasLocation" x="47.5" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PostComment" width="25" height="25"/>
+    </resources>
+</document>
